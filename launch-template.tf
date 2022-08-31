@@ -39,4 +39,3 @@ resource "aws_launch_template" "launch-template" {
     REDIS_ENDPOINT         = var.REDIS_ENDPOINT
   }))
 }
-}
