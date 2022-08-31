@@ -7,7 +7,6 @@ variable "ENV" {}
 variable "INSTANCE_TYPE" {}
 variable "WORKSTATION_IP" {}
 variable "COMPONENT" {}
-variable "INSTANCE_COUNT" {}
 variable "LB_ARN" {}
 variable "LB_TYPE" {}
 variable "PRIVATE_LB_DNS" {}
@@ -24,3 +23,6 @@ variable "MYSQL_ENDPOINT" {
 }
 variable "PROMETHEUS_IP" {}
 variable "APP_VERSION" {}
+variable "ASG_DESIRED" {}
+variable "ASG_MAX" {}
+variable "ASG_MIN" {}
