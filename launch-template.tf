@@ -28,6 +28,8 @@ resource "aws_launch_template" "launch-template" {
       Name = local.TAG_PREFIX
     }
   }
+
+
   user_data = base64encode(templatefile("${path.module}/userdata.sh", {
     ENV                    = var.ENV
     COMPONENT              = var.COMPONENT
